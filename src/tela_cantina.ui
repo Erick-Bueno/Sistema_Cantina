@@ -2,12 +2,15 @@
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>807</width>
-    <height>489</height>
+    <width>571</width>
+    <height>490</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -17,7 +20,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Cantina</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>
@@ -86,12 +89,17 @@
            </font>
           </property>
           <property name="styleSheet">
-           <string notr="true">QLineEdit{background-color: rgb(255, 255, 255);
+           <string notr="true">QLineEdit{
+	background-color: rgb(73, 120, 156);
 border-radius: 12px;
 padding-left: 15px;
+color: white;
 }
 
 QLineEdit:focus{
+	border: 2px solid #32536B;
+}
+QLineEdit:hover{
 	border: 2px solid #32536B;
 }</string>
           </property>
@@ -109,12 +117,17 @@ QLineEdit:focus{
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QLineEdit{background-color: rgb(255, 255, 255);
+           <string notr="true">QLineEdit{
+	background-color: rgb(73, 120, 156);
 border-radius: 12px;
 padding-left: 15px;
+color: white;
 }
 
 QLineEdit:focus{
+	border: 2px solid #32536B;
+}
+QLineEdit:hover{
 	border: 2px solid #32536B;
 }</string>
           </property>
@@ -127,17 +140,22 @@ QLineEdit:focus{
            <rect>
             <x>140</x>
             <y>240</y>
-            <width>91</width>
+            <width>111</width>
             <height>31</height>
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QLineEdit{background-color: rgb(255, 255, 255);
+           <string notr="true">QLineEdit{
+	background-color: rgb(73, 120, 156);
 border-radius: 12px;
-padding-left:15px;
+padding-left: 15px;
+color: white;
 }
 
 QLineEdit:focus{
+	border: 2px solid #32536B;
+}
+QLineEdit:hover{
 	border: 2px solid #32536B;
 }</string>
           </property>
@@ -174,7 +192,8 @@ QLineEdit:focus{
 QPushButton:hover{
 	background-color:#52606B;
 	color: white;
-}</string>
+}
+</string>
           </property>
           <property name="text">
            <string>Cadastrar</string>
@@ -184,7 +203,7 @@ QPushButton:hover{
           <property name="geometry">
            <rect>
             <x>90</x>
-            <y>40</y>
+            <y>50</y>
             <width>342</width>
             <height>32</height>
            </rect>
@@ -214,7 +233,7 @@ QPushButton:hover{
       <property name="maximumSize">
        <size>
         <width>16777215</width>
-        <height>40</height>
+        <height>45</height>
        </size>
       </property>
       <property name="styleSheet">
@@ -227,8 +246,62 @@ QPushButton:hover{
        <enum>QFrame::Raised</enum>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
        <item row="0" column="0">
         <widget class="QPushButton" name="pushButton_2">
+         <property name="maximumSize">
+          <size>
+           <width>40</width>
+           <height>45</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton:focus{
+	
+	background-color: rgb(87, 146, 186);
+	border-radius: 5px;
+	
+	
+	
+
+	
+	
+}
+QPushButton{
+	Border: none;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/newPrefix/produtos.png</normaloff>:/newPrefix/produtos.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushButton_4">
          <property name="maximumSize">
           <size>
            <width>100</width>
@@ -236,12 +309,12 @@ QPushButton:hover{
           </size>
          </property>
          <property name="text">
-          <string>PushButton</string>
+          <string>b</string>
          </property>
         </widget>
        </item>
-       <item row="0" column="2">
-        <widget class="QPushButton" name="pushButton_4">
+       <item row="0" column="3">
+        <widget class="QPushButton" name="pushButton_5">
          <property name="maximumSize">
           <size>
            <width>100</width>
@@ -262,20 +335,7 @@ QPushButton:hover{
           </size>
          </property>
          <property name="text">
-          <string>PushButton</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="3">
-        <widget class="QPushButton" name="pushButton_5">
-         <property name="maximumSize">
-          <size>
-           <width>100</width>
-           <height>16777215</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>PushButton</string>
+          <string>c</string>
          </property>
         </widget>
        </item>
@@ -289,12 +349,14 @@ QPushButton:hover{
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>807</width>
+     <width>571</width>
      <height>21</height>
     </rect>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="../../../Linguas-20220714T235342Z-001/Linguas/python/pyqt6/Sistema Cantina/icones.qrc"/>
+ </resources>
  <connections/>
 </ui>
