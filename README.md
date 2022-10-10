@@ -4,7 +4,8 @@ Sistema de cantina com consumo da Api-Cantina
 Tela De Relatórios:
 
 
-![tela de relatorios](https://user-images.githubusercontent.com/101439440/194943454-725e4024-220f-4195-aa8a-a0d05756352f.png)
+![tela_relatorios](https://user-images.githubusercontent.com/101439440/194946807-ad03a47d-95af-4d6b-93d3-97117c1272ee.png)
+
 
 Tela De Loading:
 
@@ -14,4 +15,5 @@ Tela De Loading:
 Tela De Cadastro De Produtos:
 
 
-![tela de produtos](https://user-images.githubusercontent.com/101439440/194944716-e41e0427-72d9-45f1-8772-43a5bf45a449.png)
+![tela_produto](https://user-images.githubusercontent.com/101439440/194946832-b3e6c81f-3fc1-40d6-8817-1d60cd29a4b6.png)
+
