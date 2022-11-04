@@ -1,0 +1,14 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>de-volta (1).png</file>
+    <file>botao-adicionar.png</file>
+    <file>excluir.png</file>
+    <file>botao-atualizar.png</file>
+    <file>lupa (1).png</file>
+    <file>cliente (1).png</file>
+    <file>carrinho-de-compras.png</file>
+    <file>relatorio-de-negocios.png</file>
+    <file>lupa.png</file>
+    <file>produtos.png</file>
+  </qresource>
+</RCC>
