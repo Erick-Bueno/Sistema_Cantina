@@ -3,7 +3,9 @@ from audioop import add
 from cProfile import label
 import enum
 from itertools import count
-from classes import deletar_produto
+from classes.produtos.deletar_produto import del_prod
+from classes.clientes.listar_clientes import listarClientes
+from classes.clientes.adicionar_cliente import add_cliente
 import icons.iconesCant2 as iconesCant2
 from mimetypes import init
 from turtle import width
@@ -14,17 +16,23 @@ from PyQt5 import uic
 from PyQt5.QtCore import QPropertyAnimation, QPoint,QSize
 import requests
 import icons.iconesCant as iconesCant
-from classes.adicionar_produto import add_prod
+from classes.produtos.adicionar_produto import add_prod
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
 from PyQt5.QtGui import (QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
 from PyQt5.QtWidgets import *
 from PyQt5.QtWidgets import QGraphicsDropShadowEffect
-from classes.listar_produtos import listar
-from classes.pesquisar_produto import pesquisa
-from classes.deletar_produto import del_prod
-from classes.atualizar_produto import att_prod
+from classes.produtos.listar_produtos import listar
+from classes.produtos.pesquisar_produto import pesquisa
+from classes.produtos.deletar_produto import del_prod
+from classes.produtos.atualizar_produto import att_prod
+from classes.clientes.adicionar_cliente import add_cliente
+from classes.clientes.listar_clientes import listarClientes
+from classes.clientes.atualizar_cliente import att_cliente
+from classes.clientes.deletar_cliente import deletar_cli
+from classes.clientes.pesquisar_cliente import pesquisarcliente
 counter = 0
+
 class app():
     def __init__(self):
         self.app = QtWidgets.QApplication([])
@@ -51,6 +59,21 @@ class app():
         effect7 = QGraphicsDropShadowEffect(
         offset=QPoint(3, 3), blurRadius=25, color=QColor("#111")
         )
+        effect8 = QGraphicsDropShadowEffect(
+        offset=QPoint(3, 3), blurRadius=25, color=QColor("#111")
+        )
+        effect9 = QGraphicsDropShadowEffect(
+        offset=QPoint(3, 3), blurRadius=25, color=QColor("#111")
+        )
+        effect10 = QGraphicsDropShadowEffect(
+        offset=QPoint(3, 3), blurRadius=25, color=QColor("#111")
+        )
+        effect11 = QGraphicsDropShadowEffect(
+        offset=QPoint(3, 3), blurRadius=25, color=QColor("#111")
+        )
+        effect12 = QGraphicsDropShadowEffect(
+        offset=QPoint(3, 3), blurRadius=25, color=QColor("#111")
+        )
         self.cantina.frame_14.hide()
         self.cantina.frame_15.hide()
         self.cantina.pushButton_21.clicked.connect(self.adicionar_produto)
@@ -64,6 +87,12 @@ class app():
         self.cantina.pushButton_20.setGraphicsEffect(effect4)
         self.cantina.pushButton_34.setGraphicsEffect(effect6)
         self.cantina.pushButton_35.setGraphicsEffect(effect7)
+        self.cantina.pushButton_52.setGraphicsEffect(effect8)
+        self.cantina.pushButton_53.setGraphicsEffect(effect9)
+        self.cantina.pushButton_54.setGraphicsEffect(effect10)
+        self.cantina.pushButton_25.setGraphicsEffect(effect11)
+        self.cantina.pushButton_26.setGraphicsEffect(effect12)
+        
         self.cantina.pushButton_2.clicked.connect(lambda:self.anima(100, True))
         self.cantina.pushButton_3.clicked.connect(lambda:self.anima2(100, True))
         self.cantina.pushButton_18.clicked.connect(self.relatorio_janerio)
@@ -76,17 +105,30 @@ class app():
         self.cantina.pushButton_36.clicked.connect(self.sair_atualizar)
         self.cantina.pushButton_35.clicked.connect(self.sair_atualizar)
         self.cantina.pushButton_34.clicked.connect(self.enviar_dados_atualizados)
+        self.cantina.tableWidget_6.setColumnWidth(0,100)
+        self.cantina.tableWidget_6.setColumnWidth(1,150)
+        self.cantina.tableWidget_6.setColumnWidth(2,150)
+        self.cantina.pushButton_54.clicked.connect(self.adicionar_cliente)
+        self.cantina.pushButton_27.clicked.connect(self.sair_tela_cliente)
+        self.cantina.pushButton_25.clicked.connect(self.adicionar_clienti)
+        self.cantina.pushButton_52.clicked.connect(self.atualizar_cliente)
+        self.cantina.pushButton_26.clicked.connect(self.sair_tela_cliente)
+        self.cantina.pushButton_53.clicked.connect(self.deletarcliennte)
+        self.cantina.pushButton_55.clicked.connect(self.pesqClietu)
+        self.cantina.frame_17.hide()
+        self.listar_clientees()
         self.load_scree()
         self.carrega.show()
         self.app.exec()
     #produtos
     def deletar(self):
             linha = self.cantina.tableWidget_2.currentRow()
+            
             if linha == -1:
                  return QMessageBox.about(self.cantina,"aviso","selecione um produto antes de deletar")
             id = self.cantina.tableWidget_2.item(linha,0).text()
+            print(linha)
             
-          
             
             
             
@@ -95,12 +137,107 @@ class app():
             l = listar()
             l.listando() 
             self.cantina.tableWidget_2.removeRow(linha)
+            self.cantina.tableWidget_2.setCurrentCell(-1,-1)
+            
        
-      
+            
             return QMessageBox.about(self.cantina,"aviso","produto deletado com sucesso")
+             
+    def adicionar_cliente(self):
+        self.cantina.frame_3.show()
+        self.cantina.frame_2.hide()
+        self.cantina.frame_8.show()
+        self.cantina.frame_11.show()
+        self.cantina.frame_10.show()
+        self.cantina.frame_14.show()
+        self.cantina.frame_17.show()
+    def sair_tela_cliente(self):
+        self.cantina.frame_17.hide()
+        self.cantina.frame_14.hide()
+        self.cantina.frame_2.show()
+        c = listarClientes()
+        c.listarCli()
+        listaaa = c.dados
+        keys = "id", "Nome","Numero"
+        self.cantina.tableWidget_6.setRowCount(len(listaaa))
+        self.cantina.tableWidget_6.setColumnCount(3)
+        for x in range(len(listaaa)):
+            for i, k in enumerate(keys):
+                self.cantina.tableWidget_6.setItem(x,i, QtWidgets.QTableWidgetItem(str(listaaa[x][k])))
+    def deletarcliennte(self):
+        linha = self.cantina.tableWidget_6.currentRow()
+        if linha == -1:
+            return QMessageBox.information(self.cantina, "aviso", "selecione um cliente antes de excluir")
+        id = self.cantina.tableWidget_6.item(linha, 0).text()
+        d = deletar_cli()
+        d.del_cli(id)
+        l = listarClientes()
+        l.listarCli()
+        self.cantina.tableWidget_6.setCurrentCell(-1, -1)
+        self.cantina.tableWidget_6.removeRow(linha)
+        return QMessageBox.about(self.cantina,"aviso","Cliente deletado com sucesso")
+
+
+    def pesqClietu(self):
+        try:
+            self.campo_pesquisa2 = self.cantina.lineEdit_16.text()
+            p = pesquisarcliente()
+            p.pes_cli(self.campo_pesquisa2)
+            dados = p.resp
+            keys = "id", "Nome", "Telefone"
+            self.cantina.tableWidget_6.setColumnCount(3)
+            self.cantina.tableWidget_6.setRowCount(len(dados))
+            for c in range(len(dados)):
+                for i, k in enumerate(keys):
+                    self.cantina.tableWidget_6.setItem(c,i,QtWidgets.QTableWidgetItem(str(dados[c][k])))
+        except:
+            return QMessageBox.warning(self.cantina,"aviso", "usuario não encontrado")
+
+    def adicionar_clienti(self):
+        self.nome_cliente = self.cantina.lineEdit_7.text()
+        self.telefone = self.cantina.lineEdit_9.text()
+        if self.nome_cliente == " " or self.telefone == " ":
+            return QMessageBox.warning(self.cantina,"warning","informe os dados corretamente")
+        try:
+           a = add_cliente()
+           a.Addcliente(self.nome_cliente,self.telefone)
+           self.cantina.lineEdit_7.clear()
+           self.cantina.lineEdit_9.clear()
+           return QMessageBox.warning(self.cantina,"about","cliente cadastrado com sucesso")
+        
+        except:
+            return QMessageBox.warning(self.cantina,"warning","informe os dados corretamente")
+    def listar_clientees(self):
+        c = listarClientes()
+        c.listarCli()
+        listaaa = c.dados
+        keys = "id", "Nome","Numero"
+        self.cantina.tableWidget_6.setRowCount(len(listaaa))
+        self.cantina.tableWidget_6.setColumnCount(3)
+        for x in range(len(listaaa)):
+            for i, k in enumerate(keys):
+                self.cantina.tableWidget_6.setItem(x,i, QtWidgets.QTableWidgetItem(str(listaaa[x][k])))
+    def atualizar_cliente(self):
+        linha = self.cantina.tableWidget_6.currentRow()
+        if linha == -1:
+              return QMessageBox.about(self.cantina,"aviso","selecione  um cliente antes de atualizar")
+        c = listarClientes()
+        c.listarCli()
+        listaaa = c.dados
+        for c in range(len(listaaa)):
+
+            self.id_cliente = self.cantina.tableWidget_6.item(c,0).text()
+            self.nome_cliente = self.cantina.tableWidget_6.item(c,1).text()
+            self.telefone= self.cantina.tableWidget_6.item(c, 2).text()
+            l = att_cliente()
+            l.attcliente(self.id_cliente, self.nome_cliente, self.telefone)
+        self.cantina.tableWidget_6.setCurrentCell(-1,-1)  
+        return QMessageBox.about(self.cantina,"aviso", "cliente atualizado com sucesso")
+         
+            
     def atualizar(self):
         linha = self.cantina.tableWidget_2.currentRow()
-        
+        print(linha)   
 
  
         if linha == -1:
@@ -127,6 +264,7 @@ class app():
               self.cantina.comboBox_9.setItemText(1,"Comida")
         self.cantina.comboBox_10.setItemText(0,self.uni_med)
         self.cantina.frame_2.hide()
+        self.cantina.tableWidget_2.setCurrentCell(-1,-1)
     def enviar_dados_atualizados(self):
         self.valcomprtota = self.cantina.lineEdit_23.text()
         self.quant_prode = self.cantina.spinBox_5.value()
@@ -175,6 +313,7 @@ class app():
         self.cantina.frame_10.show()
         self.cantina.frame_14.show()
         self.cantina.frame_2.hide()
+        
     #colocar logica desse metodo no arquivo adicionar_produto
     def enviar_produto(self):
         self.nome_produto = self.cantina.lineEdit_2.text()
@@ -211,7 +350,7 @@ class app():
       
         a = add_prod()
         a.adicionar(self.nome_produto, self.preço, self.quantidade, self.peso, self.uniMedida, self.categoria,self.preço_compra_total, self.preço_compra_unitario)
-
+       
         self.cantina.spinBox.setValue(0)
         self.cantina.lineEdit_2.clear()
         self.cantina.lineEdit_5.clear()
@@ -220,6 +359,7 @@ class app():
         QMessageBox.warning(self.cantina,"aviso", "Produto adicionado com sucesso")
         l = listar()
         l.listando() 
+        
         keys ='id','Nome', 'Preço' , 'Quantidade', 'Data', 'Peso','UniMedida', 'Categoria','Preço_Compra_total', 'Preço_Compra_Unitario'
         self.cantina.tableWidget_2.setRowCount(len(l.produtos))
         self.cantina.tableWidget_2.setColumnCount(10)
