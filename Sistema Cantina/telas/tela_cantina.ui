@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>708</width>
-    <height>501</height>
+    <height>490</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -71,7 +71,7 @@
             <x>-11</x>
             <y>0</y>
             <width>521</width>
-            <height>441</height>
+            <height>431</height>
            </rect>
           </property>
           <property name="frameShape">
@@ -167,20 +167,7 @@ border-radius: 1px;</string>
             </column>
             <column>
              <property name="text">
-              <string>ValCompTot</string>
-             </property>
-             <property name="font">
-              <font>
-               <family>Verdana</family>
-               <pointsize>8</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-            </column>
-            <column>
-             <property name="text">
-              <string>ValCompUni</string>
+              <string>ValorCompra</string>
              </property>
              <property name="font">
               <font>
@@ -215,6 +202,1370 @@ border-radius: 1px;</string>
             <property name="text">
              <string>Vendas Janeiro</string>
             </property>
+           </widget>
+           <widget class="QFrame" name="frame_18">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>491</width>
+              <height>231</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QTableWidget" name="tableWidget_3">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>40</y>
+               <width>431</width>
+               <height>171</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Verdana</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+             </property>
+             <column>
+              <property name="text">
+               <string>Quantidade</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Preço_item</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Data_venda</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>NomeProduto</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>ValorCompra</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>8</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+            </widget>
+            <widget class="QLabel" name="label_10">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>10</y>
+               <width>231</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Verdana</family>
+               <pointsize>17</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Vendas Fevereiro</string>
+             </property>
+            </widget>
+            <widget class="QFrame" name="frame_19">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>491</width>
+               <height>231</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <widget class="QTableWidget" name="tableWidget_4">
+              <property name="geometry">
+               <rect>
+                <x>30</x>
+                <y>40</y>
+                <width>431</width>
+                <height>171</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+              </property>
+              <column>
+               <property name="text">
+                <string>Quantidade</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Preço_item</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Data_venda</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>NomeProduto</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>ValorCompra</string>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>8</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+              </column>
+             </widget>
+             <widget class="QLabel" name="label_13">
+              <property name="geometry">
+               <rect>
+                <x>40</x>
+                <y>0</y>
+                <width>201</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>17</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Vendas Março</string>
+              </property>
+             </widget>
+             <widget class="QFrame" name="frame_20">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>491</width>
+                <height>231</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <widget class="QTableWidget" name="tableWidget_8">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>40</y>
+                 <width>431</width>
+                 <height>171</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+               </property>
+               <column>
+                <property name="text">
+                 <string>Quantidade</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Preço_item</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Data_venda</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>NomeProduto</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>ValorCompra</string>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </column>
+              </widget>
+              <widget class="QLabel" name="label_23">
+               <property name="geometry">
+                <rect>
+                 <x>40</x>
+                 <y>0</y>
+                 <width>201</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <family>Verdana</family>
+                 <pointsize>17</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: rgb(255, 255, 255);</string>
+               </property>
+               <property name="text">
+                <string>Vendas Abril</string>
+               </property>
+              </widget>
+              <widget class="QFrame" name="frame_21">
+               <property name="geometry">
+                <rect>
+                 <x>0</x>
+                 <y>0</y>
+                 <width>491</width>
+                 <height>231</height>
+                </rect>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+               </property>
+               <property name="frameShape">
+                <enum>QFrame::StyledPanel</enum>
+               </property>
+               <property name="frameShadow">
+                <enum>QFrame::Raised</enum>
+               </property>
+               <widget class="QTableWidget" name="tableWidget_9">
+                <property name="geometry">
+                 <rect>
+                  <x>30</x>
+                  <y>40</y>
+                  <width>431</width>
+                  <height>171</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                </property>
+                <column>
+                 <property name="text">
+                  <string>Quantidade</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Preço_item</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>Data_venda</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>NomeProduto</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                </column>
+                <column>
+                 <property name="text">
+                  <string>ValorCompra</string>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <pointsize>8</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                </column>
+               </widget>
+               <widget class="QLabel" name="label_24">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>0</y>
+                  <width>201</width>
+                  <height>31</height>
+                 </rect>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>Verdana</family>
+                  <pointsize>17</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Vendas Maio</string>
+                </property>
+               </widget>
+               <widget class="QFrame" name="frame_22">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>491</width>
+                  <height>231</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+                </property>
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <widget class="QTableWidget" name="tableWidget_10">
+                 <property name="geometry">
+                  <rect>
+                   <x>30</x>
+                   <y>40</y>
+                   <width>431</width>
+                   <height>171</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                 </property>
+                 <column>
+                  <property name="text">
+                   <string>Quantidade</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Preço_item</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Data_venda</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>NomeProduto</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>ValorCompra</string>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>8</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                 </column>
+                </widget>
+                <widget class="QLabel" name="label_25">
+                 <property name="geometry">
+                  <rect>
+                   <x>40</x>
+                   <y>0</y>
+                   <width>201</width>
+                   <height>31</height>
+                  </rect>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Verdana</family>
+                   <pointsize>17</pointsize>
+                   <weight>75</weight>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">color: rgb(255, 255, 255);</string>
+                 </property>
+                 <property name="text">
+                  <string>Vendas Junho</string>
+                 </property>
+                </widget>
+                <widget class="QFrame" name="frame_23">
+                 <property name="geometry">
+                  <rect>
+                   <x>0</x>
+                   <y>0</y>
+                   <width>491</width>
+                   <height>231</height>
+                  </rect>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QTableWidget" name="tableWidget_11">
+                  <property name="geometry">
+                   <rect>
+                    <x>30</x>
+                    <y>40</y>
+                    <width>431</width>
+                    <height>171</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                  </property>
+                  <column>
+                   <property name="text">
+                    <string>Quantidade</string>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Verdana</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Preço_item</string>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Verdana</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Data_venda</string>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Verdana</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>NomeProduto</string>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Verdana</family>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>ValorCompra</string>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Verdana</family>
+                     <pointsize>8</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                  </column>
+                 </widget>
+                 <widget class="QLabel" name="label_26">
+                  <property name="geometry">
+                   <rect>
+                    <x>40</x>
+                    <y>0</y>
+                    <width>201</width>
+                    <height>31</height>
+                   </rect>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <family>Verdana</family>
+                    <pointsize>17</pointsize>
+                    <weight>75</weight>
+                    <bold>true</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Vendas Julho</string>
+                  </property>
+                 </widget>
+                 <widget class="QFrame" name="frame_24">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>491</width>
+                    <height>231</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+                  </property>
+                  <property name="frameShape">
+                   <enum>QFrame::StyledPanel</enum>
+                  </property>
+                  <property name="frameShadow">
+                   <enum>QFrame::Raised</enum>
+                  </property>
+                  <widget class="QTableWidget" name="tableWidget_12">
+                   <property name="geometry">
+                    <rect>
+                     <x>30</x>
+                     <y>40</y>
+                     <width>431</width>
+                     <height>171</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Verdana</family>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                   </property>
+                   <column>
+                    <property name="text">
+                     <string>Quantidade</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Preço_item</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>Data_venda</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>NomeProduto</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </column>
+                   <column>
+                    <property name="text">
+                     <string>ValorCompra</string>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                      <pointsize>8</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                   </column>
+                  </widget>
+                  <widget class="QLabel" name="label_27">
+                   <property name="geometry">
+                    <rect>
+                     <x>40</x>
+                     <y>0</y>
+                     <width>201</width>
+                     <height>31</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <family>Verdana</family>
+                     <pointsize>17</pointsize>
+                     <weight>75</weight>
+                     <bold>true</bold>
+                    </font>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">color: rgb(255, 255, 255);</string>
+                   </property>
+                   <property name="text">
+                    <string>Vendas Agosto</string>
+                   </property>
+                  </widget>
+                  <widget class="QFrame" name="frame_27">
+                   <property name="geometry">
+                    <rect>
+                     <x>0</x>
+                     <y>0</y>
+                     <width>491</width>
+                     <height>231</height>
+                    </rect>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+                   </property>
+                   <property name="frameShape">
+                    <enum>QFrame::StyledPanel</enum>
+                   </property>
+                   <property name="frameShadow">
+                    <enum>QFrame::Raised</enum>
+                   </property>
+                   <widget class="QTableWidget" name="tableWidget_13">
+                    <property name="geometry">
+                     <rect>
+                      <x>30</x>
+                      <y>40</y>
+                      <width>431</width>
+                      <height>171</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                    </property>
+                    <column>
+                     <property name="text">
+                      <string>Quantidade</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Verdana</family>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Preço_item</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Verdana</family>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>Data_venda</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Verdana</family>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>NomeProduto</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Verdana</family>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                    <column>
+                     <property name="text">
+                      <string>ValorCompra</string>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Verdana</family>
+                       <pointsize>8</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                    </column>
+                   </widget>
+                   <widget class="QLabel" name="label_28">
+                    <property name="geometry">
+                     <rect>
+                      <x>40</x>
+                      <y>0</y>
+                      <width>231</width>
+                      <height>31</height>
+                     </rect>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>Verdana</family>
+                      <pointsize>17</pointsize>
+                      <weight>75</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);</string>
+                    </property>
+                    <property name="text">
+                     <string>Vendas Setembro</string>
+                    </property>
+                   </widget>
+                   <widget class="QFrame" name="frame_28">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>491</width>
+                      <height>231</height>
+                     </rect>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+                    </property>
+                    <property name="frameShape">
+                     <enum>QFrame::StyledPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                     <enum>QFrame::Raised</enum>
+                    </property>
+                    <widget class="QTableWidget" name="tableWidget_14">
+                     <property name="geometry">
+                      <rect>
+                       <x>30</x>
+                       <y>40</y>
+                       <width>431</width>
+                       <height>171</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Verdana</family>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                     </property>
+                     <column>
+                      <property name="text">
+                       <string>Quantidade</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Preço_item</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>Data_venda</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>NomeProduto</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                     </column>
+                     <column>
+                      <property name="text">
+                       <string>ValorCompra</string>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <pointsize>8</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                     </column>
+                    </widget>
+                    <widget class="QLabel" name="label_31">
+                     <property name="geometry">
+                      <rect>
+                       <x>40</x>
+                       <y>0</y>
+                       <width>211</width>
+                       <height>31</height>
+                      </rect>
+                     </property>
+                     <property name="font">
+                      <font>
+                       <family>Verdana</family>
+                       <pointsize>17</pointsize>
+                       <weight>75</weight>
+                       <bold>true</bold>
+                      </font>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">color: rgb(255, 255, 255);</string>
+                     </property>
+                     <property name="text">
+                      <string>Vendas Outubro</string>
+                     </property>
+                    </widget>
+                    <widget class="QFrame" name="frame_29">
+                     <property name="geometry">
+                      <rect>
+                       <x>0</x>
+                       <y>0</y>
+                       <width>491</width>
+                       <height>231</height>
+                      </rect>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+                     </property>
+                     <property name="frameShape">
+                      <enum>QFrame::StyledPanel</enum>
+                     </property>
+                     <property name="frameShadow">
+                      <enum>QFrame::Raised</enum>
+                     </property>
+                     <widget class="QTableWidget" name="tableWidget_15">
+                      <property name="geometry">
+                       <rect>
+                        <x>30</x>
+                        <y>40</y>
+                        <width>431</width>
+                        <height>171</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                      </property>
+                      <column>
+                       <property name="text">
+                        <string>Quantidade</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Verdana</family>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Preço_item</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Verdana</family>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>Data_venda</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Verdana</family>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>NomeProduto</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Verdana</family>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                      </column>
+                      <column>
+                       <property name="text">
+                        <string>ValorCompra</string>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Verdana</family>
+                         <pointsize>8</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                      </column>
+                     </widget>
+                     <widget class="QLabel" name="label_32">
+                      <property name="geometry">
+                       <rect>
+                        <x>40</x>
+                        <y>0</y>
+                        <width>241</width>
+                        <height>31</height>
+                       </rect>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <family>Verdana</family>
+                        <pointsize>17</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);</string>
+                      </property>
+                      <property name="text">
+                       <string>Vendas Novembro</string>
+                      </property>
+                     </widget>
+                     <widget class="QFrame" name="frame_30">
+                      <property name="geometry">
+                       <rect>
+                        <x>0</x>
+                        <y>0</y>
+                        <width>491</width>
+                        <height>231</height>
+                       </rect>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">background-color: rgb(110, 184, 236);
+border-radius:25px;</string>
+                      </property>
+                      <property name="frameShape">
+                       <enum>QFrame::StyledPanel</enum>
+                      </property>
+                      <property name="frameShadow">
+                       <enum>QFrame::Raised</enum>
+                      </property>
+                      <widget class="QTableWidget" name="tableWidget_16">
+                       <property name="geometry">
+                        <rect>
+                         <x>30</x>
+                         <y>40</y>
+                         <width>431</width>
+                         <height>171</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Verdana</family>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+                       </property>
+                       <column>
+                        <property name="text">
+                         <string>Quantidade</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Verdana</family>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Preço_item</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Verdana</family>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>Data_venda</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Verdana</family>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>NomeProduto</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Verdana</family>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                       </column>
+                       <column>
+                        <property name="text">
+                         <string>ValorCompra</string>
+                        </property>
+                        <property name="font">
+                         <font>
+                          <family>Verdana</family>
+                          <pointsize>8</pointsize>
+                          <weight>75</weight>
+                          <bold>true</bold>
+                         </font>
+                        </property>
+                       </column>
+                      </widget>
+                      <widget class="QLabel" name="label_33">
+                       <property name="geometry">
+                        <rect>
+                         <x>40</x>
+                         <y>0</y>
+                         <width>231</width>
+                         <height>31</height>
+                        </rect>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <family>Verdana</family>
+                         <pointsize>17</pointsize>
+                         <weight>75</weight>
+                         <bold>true</bold>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">color: rgb(255, 255, 255);</string>
+                       </property>
+                       <property name="text">
+                        <string>Vendas Dezembro</string>
+                       </property>
+                      </widget>
+                     </widget>
+                    </widget>
+                   </widget>
+                  </widget>
+                 </widget>
+                </widget>
+               </widget>
+              </widget>
+             </widget>
+            </widget>
            </widget>
           </widget>
           <widget class="QLineEdit" name="lineEdit_3">
@@ -287,9 +1638,9 @@ QPushButton:hover{
           <widget class="QLabel" name="label_7">
            <property name="geometry">
             <rect>
-             <x>270</x>
+             <x>310</x>
              <y>80</y>
-             <width>121</width>
+             <width>81</width>
              <height>21</height>
             </rect>
            </property>
@@ -305,7 +1656,7 @@ QPushButton:hover{
             <string notr="true">color: rgb(255, 255, 255);</string>
            </property>
            <property name="text">
-            <string>Lucro Total:</string>
+            <string>Receita:</string>
            </property>
           </widget>
           <widget class="QLabel" name="label_9">
@@ -350,23 +1701,10 @@ QPushButton:hover{
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
-           <widget class="QLabel" name="label_10">
-            <property name="geometry">
-             <rect>
-              <x>30</x>
-              <y>30</y>
-              <width>47</width>
-              <height>13</height>
-             </rect>
-            </property>
-            <property name="text">
-             <string>Vendas</string>
-            </property>
-           </widget>
            <widget class="QFrame" name="frame_11">
             <property name="geometry">
              <rect>
-              <x>0</x>
+              <x>-10</x>
               <y>0</y>
               <width>501</width>
               <height>511</height>
@@ -1076,7 +2414,7 @@ QPushButton:hover{
               <rect>
                <x>9</x>
                <y>0</y>
-               <width>491</width>
+               <width>500</width>
                <height>441</height>
               </rect>
              </property>
@@ -1361,6 +2699,332 @@ QPushButton:hover{
             <zorder>frame_16</zorder>
             <zorder>frame_14</zorder>
            </widget>
+           <widget class="QLineEdit" name="lineEdit_17">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>20</y>
+              <width>171</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Verdana</family>
+              <weight>50</weight>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 10px;
+padding-left:15px</string>
+            </property>
+            <property name="placeholderText">
+             <string>Nome Do Produto</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="spinBox_2">
+            <property name="geometry">
+             <rect>
+              <x>300</x>
+              <y>20</y>
+              <width>131</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(87, 142, 184);
+color: rgb(255, 255, 255);
+border: 2px solid rgb(110, 184, 236);</string>
+            </property>
+            <property name="wrapping">
+             <bool>false</bool>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::UpDownArrows</enum>
+            </property>
+            <property name="showGroupSeparator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="maximum">
+             <number>1000000000</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_19">
+            <property name="geometry">
+             <rect>
+              <x>310</x>
+              <y>10</y>
+              <width>41</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="font">
+             <font>
+              <family>Verdana</family>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Quant.</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_56">
+            <property name="geometry">
+             <rect>
+              <x>80</x>
+              <y>60</y>
+              <width>91</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">
+QPushButton{
+background-color: rgb(110, 184, 236);
+color: rgb(255, 255, 255);
+border: none;
+border-radius: 10px;
+}
+QPushButton:hover{
+	
+	
+	background-color: rgb(55, 152, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>  Atualizar</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/newPrefix/botao-atualizar.png</normaloff>:/newPrefix/botao-atualizar.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_57">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>60</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(110, 184, 236);
+color: rgb(255, 255, 255);
+border: none;
+border-radius: 10px;
+}
+QPushButton:hover{
+	
+	
+	background-color: rgb(55, 152, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string> Excluir</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>:/newPrefix/excluir.png</normaloff>:/newPrefix/excluir.png</iconset>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_58">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>60</y>
+              <width>81</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(110, 184, 236);
+color: rgb(255, 255, 255);
+border: none;
+border-radius: 10px;
+}
+QPushButton:hover{
+	
+	
+	background-color: rgb(55, 152, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string>Confirmar</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../../Downloads/marca-de-verificacao (1).png</normaloff>../../../../../../../Downloads/marca-de-verificacao (1).png</iconset>
+            </property>
+           </widget>
+           <widget class="QFrame" name="frame_26">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>110</y>
+              <width>411</width>
+              <height>301</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(110, 184, 236);
+border-radius: 25px;</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QTableWidget" name="tableWidget_7">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>40</y>
+               <width>391</width>
+               <height>241</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Verdana</family>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 1px;</string>
+             </property>
+             <property name="selectionBehavior">
+              <enum>QAbstractItemView::SelectRows</enum>
+             </property>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Id</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Nome</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Quantidade</string>
+              </property>
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </column>
+            </widget>
+            <widget class="QLabel" name="label_30">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>0</y>
+               <width>141</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <family>Verdana</family>
+               <pointsize>17</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text">
+              <string>Carrinho</string>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QPushButton" name="pushButton_59">
+            <property name="geometry">
+             <rect>
+              <x>440</x>
+              <y>20</y>
+              <width>31</width>
+              <height>31</height>
+             </rect>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: rgb(110, 184, 236);
+color: rgb(255, 255, 255);
+border: none;
+
+}
+QPushButton:hover{
+	
+	
+	background-color: rgb(55, 152, 255);
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../../../Downloads/adicionar-botao (1).png</normaloff>../../../../../../../Downloads/adicionar-botao (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+           </widget>
+           <zorder>pushButton_59</zorder>
+           <zorder>pushButton_58</zorder>
+           <zorder>frame_26</zorder>
+           <zorder>spinBox_2</zorder>
+           <zorder>label_19</zorder>
+           <zorder>pushButton_56</zorder>
+           <zorder>pushButton_57</zorder>
+           <zorder>lineEdit_17</zorder>
+           <zorder>frame_11</zorder>
           </widget>
           <widget class="QLineEdit" name="lineEdit_4">
            <property name="enabled">
@@ -2149,9 +3813,9 @@ QPushButton:hover{
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>270</y>
+            <y>0</y>
             <width>741</width>
-            <height>151</height>
+            <height>421</height>
            </rect>
           </property>
           <property name="maximumSize">
